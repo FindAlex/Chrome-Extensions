@@ -1,0 +1,15 @@
+{  
+  "name": "url-to-QRcode",  
+  "version": "0.1.0",
+  "manifest_version": 2,  
+  "description": "change u current url to a QRcode ,so u can open it on your phone.",  
+  "browser_action": {  
+    "default_icon": "icon.png" ,
+    "default_title": "url to QRcode",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs"
+  ]
+
+} 

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/jquery.qrcode.js"></script>
+<script src="js/qrcode.js"></script>
+<style>
+	.wrapper{width:280px; }
+	h3{ font-size:18px; font-size:16px; color:#eb532c; text-align:center;}
+	.logo{ display:inline-block; width:20px; height:20px; vertical-align:middle;}
+	#info{ overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-align:center; font-size:12px; color:#999; width:95%; margin:0 auto 20px;}
+	#QRcode{ margin:0 auto;width:140px; height:140px; display:block; text-align:center; padding-bottom:30px;}
+
+	.newUrl input{ display:block; width:90%; padding:10px; box-sizing:border-box; margin:0 auto;}
+	.newUrl .ok{ display:block; width:120px; height:40px; line-height:40px; text-align:center; color:#fff; background:#429eff;margin:10px auto; cursor:pointer; -webkit-transition:all .5s ease; border-radius:2px;}
+	.newUrl .ok:hover{ background:#096ed8;}
+	.newUrl .error{ color:#F00; font-size:12px; line-height:35px;}
+	
+	.Extension{ text-align:center; color:#aaa; font-size:12px;  margin:20px 0;}
+	.Extension a{color:#aaa;text-decoration:none;}
+	.Extension a:hover{text-decoration:underline; color:#333;}
+	
+</style>
+</head>
+
+<body>
+	<div class="wrapper">
+        <h3>用手机扫一扫，访问当前页网址</h3>
+        <p id="info"></p>
+        <div id="QRcode"></div>
+        <div class="newUrl">
+        	<div class="error"></div>
+        	<input placeholder="输入网址，例：http://www.google.com" /><a class="ok">重新生成二维码</a>
+        </div>
+        <div class="Extension">
+        推广：<a href="http://www.templatesy.com" target="_blank" title="模板世界">www.templatesy.com</a>
+        </div>
+    </div>
+</body>
+</html>
